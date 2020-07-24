@@ -1,369 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+	Author by FreeHTML5.co
+	Twitter: https://twitter.com/fh5co
+	Facebook: https://fb.com/fh5co
+	URL: https://freehtml5.co
+-->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Munter - Bootstrap One Page Template</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/fancybox/fancybox.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <link rel="prefetch" href="img/zoom.png">
-
-  <!-- =======================================================
-    Template Name: Munter
-    Template URL: https://templatemag.com/munter-bootstrap-one-page-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<title>Author</title>
 </head>
+<body>
 
-<body data-spy="scroll" data-offset="58" data-target="#navigation">
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="site-navigation-inner site-container">
+			<img src="./images/site-logo.png" alt="site logo">
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="#">Homepage</a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+					<li><a href="#">Page 4</a></li>
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+				}
+			</script>
 
-  <!-- Fixed navbar -->
-  <div id="navigation" class="navbar navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <i class="fa fa-bars"></i>
-        </button>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#intro" class="smoothscroll">Home</a></li>
-          <li><a href="#about-us" class="smoothscroll">About Us</a></li>
-          <li><a href="#portfolio" class="smoothscroll">Portfolio</a></li>
-          <li><a href="#process" class="smoothscroll">Process</a></li>
-          <li><a href="#clients" class="smoothscroll">Clients</a></li>
-          <li><a href="#contact" class="smoothscroll">Contact</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse -->
-    </div>
-  </div>
+		</div>
+	</nav>
+	<!-- Navigation end -->
 
-  <!-- === MAIN Background === -->
-  <div class="slide story" id="intro" data-slide="1">
-    <div class="container">
-      <div id="home-row-1" class="row clearfix">
-        <div class="col-12">
-          <h1 class="font-semibold">MUNTER <span class="font-thin">DESIGN</span></h1>
-          <h4 class="font-thin">We are an <span class="font-semibold">independent interactive agency</span> based in London.</h4>
-          <br>
-          <br>
-        </div>
-        <!-- /col-12 -->
-      </div>
-      <!-- /row -->
-      <div id="home-row-2" class="row clearfix">
+	<!-- Top banner -->
+	<section class="fh5co-top-banner">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__image">
+				<img src="./images/top-banner-author.jpg" alt="author image">
+			</div>
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<span class="brand-span">Hello! I'm</span>
+					<h2 class="top-banner__h2">Jhone</h2>
+				</div>
+				<div class="top-banner__text-down">
+					<h2 class="top-banner__h2">Smith</h2>
+					<span class="brand-span">Author, Writer, Traveler</span>
+				</div>
+				<p>One Man. One Mission. Can He Go Beyond?One Man. One Mission. Can He Go Beyond?</p>
+				<a href="#" class="brand-button">Read bio > </a>
+			</div>
+		</div>
+	</section>
+	<!-- Top banner end -->
 
-        <div class="col-12 col-sm-4">
-          <a href="#portfolio" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="img/s02.png"></div><span>PROFESSIONAL</span></a>
-        </div>
+	<!-- About me -->
+	<section class="fh5co-about-me">
+		<div class="about-me-inner site-container">
+			<article class="portfolio-wrapper">
+				<div class="portfolio__img">
+					<img src="./images/about-me.jpg" class="about-me__profile" alt="about me profile picture">
+				</div>
+				<div class="portfolio__bottom">
+					<div class="portfolio__name">
+						<span>J</span>
+						<h2 class="universal-h2">hone Smith</h2>
+					</div>
+					<p>Jhone Smith is a short story author, novelist, and award-winning poet.</p>
+				</div>
+			</article>
+			<div class="about-me__text">
+				<div class="about-me-slider">
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me</h2>
+						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services, have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and have created a community for authors to learn and connect.</p>
+						<h4>Author</h4>
+						<p class="p-white">See me</p>
+					</div>
+					<div class="about-me-single-slide">
+						<h2 class="universal-h2 universal-h2-bckg">About me 2</h2>
+						<p><span>H</span> e has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and the British Fantasy Society journal Dark Horizons. He is also CEO of a company, specializing in custom book publishing and social media marketing services, have created a community for authors to learn and connect.He has work appearing or forthcoming in over a dozen venues, including Buzzy Mag, The Spirit of Poe, and have created a community for authors to learn and connect.</p>
+						<h4>Author</h4>
+						<p class="p-white">See me</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-me-bckg"></div>
+	</section>
+	<!-- About me end -->
 
-        <div class="col-12 col-sm-4">
-          <a href="#process" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="img/s01.png"></div><span>FRIENDLY</span></a>
-        </div>
+	<!-- Books and CD -->
+	<section class="fh5co-books">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">New Books And CD</h2>
+			<div class="books">
+				<div class="single-book">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-1.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">Olivani</h4>
+					<span class="single-book__price">$15.00</span>
+					<!-- star rating -->
+					<div class="rating">
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+					</div>
+					<!-- star rating end -->
+				</div>
+				<div class="single-book">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-2.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">Molleon’s Life</h4>
+					<span class="single-book__price">$22.00</span>
+					<!-- star rating -->
+					<div class="rating">
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+						<span>&#9734;</span>
+					</div>
+					<!-- star rating end -->
+				</div>
+				<div class="single-book">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-3.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">Love is Love</h4>
+					<span class="single-book__price">$25.00</span>
+				</div>
+				<div class="single-book">
+					<a href="#" class="single-book__img">
+						<img src="./images/books-4.jpg" alt="single book and cd">
+						<div class="single-book_download">
+							<img src="./images/download.svg" alt="book image">
+						</div>
+					</a>
+					<h4 class="single-book__title">Give Me Also</h4>
+					<span class="single-book__price">$30.00</span>
+				</div>
+			</div>
+			<div class="books-brand-button">
+				<a href="#" class="brand-button">View more</a>
+			</div>
+		</div>
+	</section>
+	<!-- Books and CD end -->
 
-        <div class="col-12 col-sm-4">
-          <a href="#clients" class="smoothscroll navigation-slide-a"><div class="home-hover navigation-slide"><img src="img/s03.png"></div><span>SUITABLE</span></a>
-        </div>
-      </div>
-      <!-- /row -->
-    </div>
-    <!-- /container -->
-  </div>
-  <!-- /slide1 -->
+	<!-- Counter -->
+	<div class="fh5co-counter counters">
+		<div class="counter-inner site-container">
+			<div class="single-count">
+				<span class="count" data-count="50">0</span>
+				<div class="single-count__text">
+					<img src="./images/counter-1.png" alt="counter icon">
+					<p>Books</p>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="600">0</span>
+				<div class="single-count__text">
+					<img src="./images/counter-2.png" alt="counter icon">
+					<p>Pages</p>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="2000">0</span>
+				<div class="single-count__text">
+					<img src="./images/counter-3.png" alt="counter icon">
+					<p>Sales</p>
+				</div>
+			</div>
+			<div class="single-count">
+				<span class="count" data-count="125">0</span>
+				<div class="single-count__text">
+					<img src="./images/counter-4.png" alt="counter icon">
+					<p>Awards</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Counter -->
 
-  <!-- === Slide 2 === -->
-  <div class="slide story" id="about-us" data-slide="2">
-    <div class="container">
-      <div class="row title-row">
-        <div class="col-12 font-thin">Contrary to popular belief, <span class="font-semibold">Lorem Ipsum</span> <br>is not simply random text.</div>
-      </div>
-      <!-- /row -->
-      <div class="row line-row">
-        <div class="hr">&nbsp;</div>
-      </div>
-      <!-- /row -->
-      <div class="row subtitle-row">
-        <div class="col-12 font-thin">This is what <span class="font-semibold">we do best</span></div>
-      </div>
-      <!-- /row -->
-      <div class="row content-row">
-        <div class="col-12 col-lg-3 col-sm-6">
-          <p><i class="fa fa-eye"></i></p>
-          <h2 class="font-thin">Visual <span class="font-semibold">Identity</span></h2>
-          <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-lg-3 col-sm-6">
-          <p><i class="fa fa-laptop"></i></p>
-          <h2 class="font-thin">Web <span class="font-semibold">Design</span></h2>
-          <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-lg-3 col-sm-6">
-          <p><i class="fa fa-tablet"></i></p>
-          <h2 class="font-thin">Mobile <span class="font-semibold">Apps</span></h2>
-          <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-lg-3 col-sm-6">
-          <p><i class="fa fa-pencil"></i></p>
-          <h2 class="font-semibold">Development</h2>
-          <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-        </div>
-        <!-- /col12 -->
-      </div>
-      <!-- /row -->
-    </div>
-    <!-- /container -->
-  </div>
-  <!-- /slide2 -->
+	<!-- Blog -->
+	<section class="fh5co-blog">
+		<div class="site-container">
+			<h2 class="universal-h2 universal-h2-bckg">My Blog</h2>
+			<div class="blog-slider blog-inner">
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog1.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog2.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+				<div class="single-blog">
+					<div class="single-blog__img">
+						<img src="./images/blog2.jpg" alt="blog image">
+					</div>
+					<div class="single-blog__text">
+						<h4>The Journey Under the Waves</h4>
+						<span>On August 28, 2015</span>
+						<p>Quisque vel sapi nec lacus adipis cing bibendum nullam porta lites laoreet aliquam.velitest, tempus a ullamcorper et, lacinia mattis mi. Cras arcu nulla, blandit id cursus et, ultricies eu leo.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Blog end -->
 
-  <!-- === SLide 3 - Portfolio -->
-  <div class="slide story" id="portfolio" data-slide="3">
-    <div class="row">
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p01-large.jpg"><img class="thumb" src="img/portfolio/p01-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p02-large.jpg"><img class="thumb" src="img/portfolio/p02-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p09-large.jpg"><img class="thumb" src="img/portfolio/p09-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p010-large.jpg"><img class="thumb" src="img/portfolio/p10-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p05-large.jpg"><img class="thumb" src="img/portfolio/p05-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p06-large.jpg"><img class="thumb" src="img/portfolio/p06-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p07-large.jpg"><img class="thumb" src="img/portfolio/p07-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p08-large.jpg"><img class="thumb" src="img/portfolio/p08-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p03-large.jpg"><img class="thumb" src="img/portfolio/p03-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p04-large.jpg"><img class="thumb" src="img/portfolio/p04-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p11-large.jpg"><img class="thumb" src="img/portfolio/p11-small.jpg" alt=""></a></div>
-      <div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="img/portfolio/p12-large.jpg"><img class="thumb" src="img/portfolio/p12-small.jpg" alt=""></a></div>
-    </div>
-    <!-- /row -->
-  </div>
-  <!-- /slide3 -->
+	<!-- Quotes -->
+	<section class="fh5co-quotes">
+		<div class="site-container">
+			<div class="about-me-slider">
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img src="./images/quotes.svg" alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+				<div>
+					<h2 class="universal-h2 universal-h2-bckg">What People Are Saying 2</h2>
+					<p>“Pudding croissant cake candy canes fruitcake sweet roll pastry gummies sugar plum. Tart pastry danish soufflé donut bear claw chocolate cake marshmallow chupa chups. Jelly danish gummi bears cake donut powder chocolate cake. Bonbon soufflé lollipop biscuit dragée jelly-o. Wafer pastry pudding tiramisu chocolate bar croissant cake. Pie caramels gummies danish.”</p>
+					<img src="./images/quotes.svg" alt="quotes svg">
+					<h4>David Dixon</h4>
+					<p>Reader</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Quotes end -->
 
-  <!-- === Slide 4 - Process === -->
-  <div class="slide story" id="process" data-slide="4">
-    <div class="container">
-      <div class="row title-row">
-        <div class="col-12 font-thin">See us <span class="font-semibold">at work</span></div>
-      </div>
-      <!-- /row -->
-      <div class="row line-row">
-        <div class="hr">&nbsp;</div>
-      </div>
-      <!-- /row -->
-      <div class="row subtitle-row">
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-        <div class="col-12 col-sm-10 font-light">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-      </div>
-      <!-- /row -->
-      <div class="row content-row">
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-        <div class="col-12 col-sm-2">
-          <p><i class="fa fa-bolt"></i></p>
-          <h2 class="font-thin">Listening to<br><span class="font-semibold" >your needs</span></h2>
-          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-sm-2">
-          <p><i class="fa fa-cog"></i></p>
-          <h2 class="font-thin">Project<br><span class="font-semibold">discovery</span></h2>
-          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-sm-2">
-          <p><i class="fa fa-cloud"></i></p>
-          <h2 class="font-thin">Storming<br><span class="font-semibold">our brains</span></h2>
-          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-sm-2">
-          <p><i class="fa fa-map-marker"></i></p>
-          <h2 class="font-thin">Getting<br><span class="font-semibold">there</span></h2>
-          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-sm-2">
-          <p><i class="fa fa-gift"></i></p>
-          <h2 class="font-thin">Delivering<br><span class="font-semibold">the product</span></h2>
-          <h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-        </div>
-        <!-- /col12 -->
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-      </div>
-      <!-- /row -->
-    </div>
-    <!-- /container -->
-  </div>
-  <!-- /slide4 -->
+	<!-- Social -->
+	<section class="fh5co-social">
+		<div class="site-container">
+			<div class="social">
+				<h5>Follow me!!</h5>
+				<div class="social-icons">
+					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
+					<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+				</div>
+				<h5>Share it!</h5>
+			</div>
+		</div>
+	</section>
+	<!-- Social -->
 
-  <!-- === Slide 5 === -->
-  <div class="slide story" id="clients" data-slide="5">
-    <div class="container">
-      <div class="row title-row">
-        <div class="col-12 font-thin"><span class="font-semibold">Clients</span> we’ve worked with</div>
-      </div>
-      <!-- /row -->
-      <div class="row line-row">
-        <div class="hr">&nbsp;</div>
-      </div>
-      <!-- /row -->
-      <div class="row subtitle-row">
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-        <div class="col-12 col-sm-10 font-light">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/><br/> The standard chunk of Lorem Ipsum used since the 1500s is reproduced
-          below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero.</div>
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-      </div>
-      <!-- /row -->
-      <div class="row content-row">
-        <div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
-        <div class="col-12 col-sm-2"><img src="img/client01.png" alt=""></div>
-        <div class="col-12 col-sm-2"><img src="img/client02.png" alt=""></div>
-        <div class="col-12 col-sm-2"><img src="img/client03.png" alt=""></div>
-        <div class="col-12 col-sm-2"><img src="img/client04.png" alt=""></div>
-        <div class="col-12 col-sm-2"><img src="img/client05.png" alt=""></div>
-        <div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
-      </div>
-      <!-- /row -->
-    </div>
-    <!-- /container -->
-  </div>
-  <!-- /slide5 -->
+	<!-- Footer -->
+	<footer class="site-footer">
+		<div class="site-container">
+			<div class="footer-inner">
+				<div class="footer-info">
+					<div class="footer-info__left">
+						<img src="./images/footer-img.jpg" alt="about me image">
+						<p>Read more about me</p>
+					</div>
+					<div class="footer-info__right">
+						<h5>Get In Touch</h5>
+						<p class="footer-phone">Phone: +958734902847</p>
+						<p>Email : Jhone@Example.com</p>
+						<div class="social-icons">
+							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-pinterest.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-youtube.png" alt="social icon"></a>
+							<a href="#" target="_blank"><img src="./images/social-twitter.png" alt="social icon"></a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-contact-form">
+					<h5>Contact Form</h5>
+					<form class="contact-form">
+						<div class="contact-form__input">
+							<input type="text" name="name" placeholder="Name">
+							<input type="email" name="email" placeholder="Email">
+						</div>
+						<textarea></textarea>
+						<input type="submit" name="submit" value="Submit" class="submit-button">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© 2019 Author | Design by <a href="https://freehtml5.co/" target="_blank">freehtml5.co</a> | All rights Reserved.</p>
+				<div class="footer-bottom__img">
+					<img src="./images/footer-mastercard.png" alt="footer image">
+					<img src="./images/footer-paypal.png" alt="footer image">
+					<img src="./images/footer-visa.png" alt="footer image">
+					<img src="./images/footer-fedex.png" alt="footer image">
+					<img src="./images/footer-dhl.png" alt="footer image">
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer end -->
 
-  <!-- === Slide 6 / Contact === -->
-  <div class="slide story" id="contact" data-slide="6">
-    <div class="container">
-      <div class="row title-row">
-        <div class="col-12 font-light">Leave us a <span class="font-semibold">message</span></div>
-      </div>
-      <!-- /row -->
-      <div class="row line-row">
-        <div class="hr">&nbsp;</div>
-      </div>
-      <!-- /row -->
-      <div class="row subtitle-row">
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-        <div class="col-12 col-sm-10 font-light">You can find us literally anywhere, just push a button and we’re there</div>
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-      </div>
-      <!-- /row -->
-      <div id="contact-row-4" class="row">
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-        <div class="col-12 col-sm-2 with-hover-text">
-          <p><a target="_blank" href="#"><i class="fa fa-phone"></i></a></p>
-          <span class="hover-text font-light ">+44 4839-4343</span></a>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-sm-2 with-hover-text">
-          <p><a target="_blank" href="#"><i class="fa fa-envelope"></i></a></p>
-          <span class="hover-text font-light ">munter@example.com</span></a>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-sm-2 with-hover-text">
-          <p><a target="_blank" href="#"><i class="fa fa-home"></i></a></p>
-          <span class="hover-text font-light ">London, England<br>zip code 98443</span></a>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-sm-2 with-hover-text">
-          <p><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></p>
-          <span class="hover-text font-light ">facebook/TemplateMag</span></a>
-        </div>
-        <!-- /col12 -->
-        <div class="col-12 col-sm-2 with-hover-text">
-          <p><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></p>
-          <span class="hover-text font-light ">@TemplateMag</span></a>
-        </div>
-        <!-- /col12 -->
-        <div class="col-sm-1 hidden-sm">&nbsp;</div>
-      </div>
-      <!-- /row -->
-
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-
-          <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
-
-            <div class="form-group">
-              <label for="contact-name">Your Name</label>
-              <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" >
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-email">Your Email</label>
-              <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="contact-subject">Subject</label>
-              <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-              <div class="validate"></div>
-            </div>
-
-            <div class="form-group">
-              <label for="contact-message">Your Message</label>
-              <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-              <div class="validate"></div>
-            </div>
-
-            <div class="loading"></div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-            <div class="form-send">
-              <button type="submit" class="btn btn-large">Send Message</button>
-            </div>
-
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- /container -->
-  </div>
-
-  <div id="copyrights">
-    <div class="container">
-      <p>
-        &copy; Copyrights <strong>Munter</strong>. All Rights Reserved
-      </p>
-      <div class="credits">
-        <!--
-          You are NOT allowed to delete the credit link to TemplateMag with free version.
-          You can delete the credit link only if you bought the pro version.
-          Buy the pro version with working PHP/AJAX contact form: https://templatemag.com/munter-bootstrap-one-page-template/
-          Licensing information: https://templatemag.com/license/
-        -->
-        Created with Munter template by <a href="https://templatemag.com/">TemplateMag</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/php-mail-form/validate.js"></script>
-  <script src="lib/fancybox/fancybox.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

@@ -1,118 +1,76 @@
-$(document).ready(function(e) {
+$(document).ready(function() {
 
-  // Scrolled navbar class
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.navbar').addClass('navbar-scrolled');
-    } else {
-      $('.navbar').removeClass('navbar-scrolled');
-    }
-  });
+	
+	/* Navigation burger onclick side navigation show */
+	$('.burger-container').on('click', function() {
+		$('.main-navigation').toggle('slow');
 
-  // Smooth scroll for the menu and links with .scrollto classes
-  $('.smoothscroll').on('click', function(e) {
-    e.preventDefault();
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-
-        $('html, body').animate({
-          scrollTop: target.offset().top - 50
-        }, 1500, 'easeInOutExpo');
-      }
-    }
-  });
-
-  $(".navbar-collapse a").on('click', function() {
-    $(".navbar-collapse.collapse").removeClass('in');
-  });
-
-  // fancybox init
-
-  $(".fancybox").fancybox({
-    padding: 10,
-    helpers: {
-      overlay: {
-        locked: false
-      }
-    }
-  });
-
-  $('.with-hover-text, .regular-link').click(function(e) {
-    e.stopPropagation();
-  });
-
-  /***************
-   * = Hover text *
-   * Hover text for the last slide
-   ***************/
-  $('.with-hover-text').hover(
-    function(e) {
-      $(this).css('overflow', 'visible');
-      $(this).find('.hover-text')
-        .show()
-        .css('opacity', 0)
-        .animate({
-            paddingTop: '25px',
-            opacity: 1
-          },
-          'fast',
-          'linear'
-        );
-    },
-    function(e) {
-      var obj = $(this);
-      $(this).find('.hover-text')
-        .animate({
-            paddingTop: '0',
-            opacity: 0
-          },
-          'fast',
-          'linear',
-          function() {
-            $(this).hide();
-            $(obj).css('overflow', 'hidden');
-          }
-        );
-    }
-  );
-
-  var img_loaded = 0;
-  var j_images = [];
+		if($('#myBtn').hasClass('change')) {
+			$('body').addClass('stop-scroll');
+		} else {
+			$('body').removeClass('stop-scroll');
+		}
+	});
 
 
+	/* About me slider */
+	$('.about-me-slider').slick({
+		slidesToShow: 1,
+		prevArrow: '<span class="span-arrow slick-prev"><</span>',
+		nextArrow: '<span class="span-arrow slick-next">></span>'
+	});
+
+	/* Blog slider */
+	$('.blog-slider').slick({
+		slidesToShow: 2,
+		prevArrow: '<span class="span-arrow slick-prev"><</span>',
+		nextArrow: '<span class="span-arrow slick-next">></span>',
+		responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 1
+			}
+		}
+		]
+	});
+	
 });
 
-/******************
- * = Gallery hover *
- ******************/
-jQuery(document).ready(function($) {
-  //Cache some variables
-  var images = $('#portfolio a');
 
-  images.hover(
-    function(e) {
-      var asta = $(this).find('img');
-      $('#portfolio img').not(asta).stop(false, false).animate({
-          opacity: .5
-        },
-        'fast',
-        'linear'
-      );
-      var zoom = $('<div class="zoom"></div>');
-      if ($(this).hasClass('video')) {
-        zoom.addClass('video');
-      }
-      $(this).prepend(zoom);
-    },
-    function(e) {
-      $('#portfolio img').stop(false, false).animate({
-          opacity: 1
-        },
-        'fast',
-        'linear'
-      );
-      $('.zoom').remove();
-    }
-  );
+
+var counta = 0;
+
+$(window).scroll(function(e){
+
+
+	/* Onscroll number counter */
+	var statisticNumbers = $('.single-count');
+	if(statisticNumbers.length) {
+		var oTop = statisticNumbers.offset().top - window.innerHeight;
+		if (counta == 0 && $(window).scrollTop() > oTop) {
+			$('.count').each(function() {
+				var $this = $(this),
+				countTo = $this.attr('data-count');
+				$({
+					countNum: $this.text()
+				}).animate({
+					countNum: countTo
+				},
+
+				{
+					duration: 2000,
+					easing: 'swing',
+					step: function() {
+						$this.text(Math.floor(this.countNum));
+					},
+					complete: function() {
+						$this.text(this.countNum);
+					}
+				});
+			});
+			counta = 1;
+		}
+	}
+
 });

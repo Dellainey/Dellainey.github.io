@@ -1,6 +1,23 @@
-Thanks for downloading this template!
 
-Template Name: Munter
-Template URL: https://templatemag.com/munter-bootstrap-one-page-template/
-Author: TemplateMag.com
-License: https://templatemag.com/license/
+TITLE: 
+Author - 100% Fully Responsive One Page HTML5 Template
+
+AUTHOR:
+DESIGNED & DEVELOPED by FreeHTML5.co
+
+Website: http://freehtml5.co/
+Twitter: http://twitter.com/fh5co
+Facebook: http://facebook.com/fh5co
+
+
+CREDITS:
+
+jQuery
+http://jquery.com/
+
+Slick Slider
+http://kenwheeler.github.io/slick/
+
+Demo Images:
+http://unsplash.com
+
