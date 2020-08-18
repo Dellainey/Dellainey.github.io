@@ -716,6 +716,15 @@
     .social {
       flex-direction: column; } }
 
+.download-icons a {
+  position: fixed;
+  padding: 1px 8px;
+  margin-right: 14px;
+  transition: 0.3s ease; }
+  .download-icons a:hover {
+    background-color: #777;
+    border-color: transparent; }
+    
 .social-icons a {
   position: relative;
   border: 1px solid white;
